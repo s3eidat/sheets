@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Sheets — Free Online Spreadsheet That Opens Excel Files | S3eidat Tools</title>
+<meta name="description" content="A free, private spreadsheet in your browser: 150+ formulas, charts, sort and filter, conditional formatting, freeze panes, Arabic right-to-left sheets. Opens and saves .xlsx and .csv. No sign-up, works offline, nothing uploaded.">
+<meta property="og:title" content="Sheets — a free, private spreadsheet">
+<meta property="og:description" content="Formulas, charts, sort, filter and .xlsx files. No account, no upload. Runs 100% in your browser.">
+<link rel="icon" href="kit/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="kit/kit.css">
+<link rel="stylesheet" href="app.css">
+<script src="kit/kit.js"></script>
+<!--s3:seo-->
+<link rel="canonical" href="https://s3eidat.github.io/sheets/">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="S3eidat Tools">
+<meta property="og:url" content="https://s3eidat.github.io/sheets/">
+<meta property="og:image" content="https://s3eidat.github.io/sheets/screenshot.png">
+<meta property="og:image:width" content="1280"><meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sheets — A free spreadsheet that opens Excel files">
+<meta name="twitter:description" content="A free spreadsheet that opens Excel files. Free, private and runs 100% in your browser: no sign-up, no uploads.">
+<meta name="twitter:image" content="https://s3eidat.github.io/sheets/screenshot.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Sheets", "url": "https://s3eidat.github.io/sheets/", "description": "A free spreadsheet that opens Excel files. Free, private and runs 100% in your browser: no sign-up, no uploads.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "image": "https://s3eidat.github.io/sheets/screenshot.png", "author": {"@type": "Person", "name": "s3eidat", "url": "https://github.com/s3eidat"}}</script>
+<!--/s3:seo-->
+</head>
+<body data-tool="sheets">
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="s-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="s-redo" viewBox="0 0 24 24"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></symbol>
+  <symbol id="s-print" viewBox="0 0 24 24"><path d="M6.5 9V3.5h11V9"/><rect x="3.5" y="9" width="17" height="8" rx="2"/><path d="M6.5 14h11v6.5h-11z"/></symbol>
+  <symbol id="s-bold" viewBox="0 0 24 24"><path d="M7 4.5h6a3.75 3.75 0 0 1 0 7.5H7zM7 12h7a3.75 3.75 0 0 1 0 7.5H7z" stroke-width="2.4"/></symbol>
+  <symbol id="s-italic" viewBox="0 0 24 24"><path d="M10 4.5h8M6 19.5h8M14.5 4.5l-5 15"/></symbol>
+  <symbol id="s-under" viewBox="0 0 24 24"><path d="M7 4v7a5 5 0 0 0 10 0V4M5 20.5h14"/></symbol>
+  <symbol id="s-strike" viewBox="0 0 24 24"><path d="M16.5 7.5c-.6-1.8-2.4-3-4.6-3-2.6 0-4.4 1.4-4.4 3.4 0 1.6 1 2.5 3.2 3.1M4 12h16M8 16.5c.5 1.9 2.4 3 4.4 3 2.7 0 4.6-1.4 4.6-3.5 0-.8-.2-1.4-.6-2"/></symbol>
+  <symbol id="s-fc" viewBox="0 0 24 24"><path d="m6.5 16 5.5-12 5.5 12M8.6 11.5h6.8"/></symbol>
+  <symbol id="s-bg" viewBox="0 0 24 24"><path d="m5 11 6-6.5 7 7-6 6.5z"/><path d="M11 4.5 8.5 2M5 11h13"/><path d="M20 15s1.5 2 1.5 3a1.5 1.5 0 0 1-3 0c0-1 1.5-3 1.5-3z"/></symbol>
+  <symbol id="s-borders" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M12 4v16M4 12h16" stroke-dasharray="2 2.2"/></symbol>
+  <symbol id="s-left" viewBox="0 0 24 24"><path d="M4 6h16M4 10h10M4 14h16M4 18h10"/></symbol>
+  <symbol id="s-center" viewBox="0 0 24 24"><path d="M4 6h16M7 10h10M4 14h16M7 18h10"/></symbol>
+  <symbol id="s-right" viewBox="0 0 24 24"><path d="M4 6h16M10 10h10M4 14h16M10 18h10"/></symbol>
+  <symbol id="s-valign" viewBox="0 0 24 24"><path d="M4 20h16M12 4v12M8.5 12.5 12 16l3.5-3.5"/></symbol>
+  <symbol id="s-wrap" viewBox="0 0 24 24"><path d="M4 6h16M4 12h13a3 3 0 0 1 0 6h-4M15 15.5 12.5 18l2.5 2.5M4 18h5"/></symbol>
+  <symbol id="s-merge" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="1.5"/><path d="M8 12h8M9.5 9.5 7 12l2.5 2.5M14.5 9.5 17 12l-2.5 2.5"/></symbol>
+  <symbol id="s-sum" viewBox="0 0 24 24"><path d="M17.5 5.5V4.5h-11l6 7.5-6 7.5h11v-1"/></symbol>
+  <symbol id="s-sortA" viewBox="0 0 24 24"><path d="M7 4v16M3.5 16.5 7 20l3.5-3.5"/><path d="M13.5 10.5 16 4l2.5 6.5M14.3 8.5h3.4M13.5 13.5h5l-5 6.5h5"/></symbol>
+  <symbol id="s-sortZ" viewBox="0 0 24 24"><path d="M7 4v16M3.5 16.5 7 20l3.5-3.5"/><path d="M13.5 4h5l-5 6.5h5M13.5 20l2.5-6.5 2.5 6.5M14.3 18h3.4"/></symbol>
+  <symbol id="s-filter" viewBox="0 0 24 24"><path d="M3.5 5h17l-6.5 7.5v6l-4 2v-8z"/></symbol>
+  <symbol id="s-cf" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.5h17M3.5 15h17M9.5 3.5v17"/><path d="M13 12.2h5.5" stroke-width="3.5" stroke-opacity=".45"/></symbol>
+  <symbol id="s-chart" viewBox="0 0 24 24"><path d="M4 20h16"/><rect x="5.5" y="11" width="3" height="7" rx=".8"/><rect x="10.5" y="6" width="3" height="12" rx=".8"/><rect x="15.5" y="13" width="3" height="5" rx=".8"/></symbol>
+  <symbol id="s-freeze" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9h17M9 3.5v17" stroke-width="2.6"/></symbol>
+  <symbol id="s-rows" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="6" rx="1.5"/><rect x="3.5" y="14" width="17" height="6" rx="1.5"/><path d="M12 10.5v3M10.5 12h3"/></symbol>
+  <symbol id="s-find" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></symbol>
+  <symbol id="s-rtl" viewBox="0 0 24 24"><path d="M10 4h9M15 4v14M11.5 4v14M10 4a3.5 3.5 0 0 0 0 7h1.5M8.5 18l-4-3 4-3M4.5 15H10"/></symbol>
+  <symbol id="s-pen" viewBox="0 0 24 24"><path d="M15 5.5 18.5 9 9 18.5 4.5 19.5l1-4.5z"/></symbol>
+  <symbol id="s-cur" viewBox="0 0 24 24"><path d="M15.5 8.3c-.5-1.4-1.9-2.3-3.6-2.3-2.1 0-3.6 1.1-3.6 2.7 0 3.9 7.6 1.9 7.6 6 0 1.7-1.6 2.9-3.8 2.9-1.9 0-3.4-.9-3.9-2.5M12 3.5V6M12 17.6v2.9"/></symbol>
+  <symbol id="s-pct" viewBox="0 0 24 24"><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/><path d="M18.5 5.5 5.5 18.5"/></symbol>
+  <symbol id="s-decup" viewBox="0 0 24 24"><path d="M3.5 17h1M8 17a2.5 3.5 0 1 0 5 0v-3a2.5 3.5 0 1 0-5 0zM16 12.5l2.5-2.5v7M15.5 6h6M18.5 3v6" stroke-width="1.6"/></symbol>
+  <symbol id="s-decdown" viewBox="0 0 24 24"><path d="M3.5 17h1M8 17a2.5 3.5 0 1 0 5 0v-3a2.5 3.5 0 1 0-5 0zM15.5 6h6" stroke-width="1.6"/><path d="M16 17a2 3 0 1 0 4 0v-2a2 3 0 1 0-4 0z" stroke-width="1.6"/></symbol>
+  <symbol id="s-chev" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+  <symbol id="s-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6M12 17h.01"/></symbol>
+</svg>
+<main class="s3-main sh-main">
+  <section class="sh-hero">
+    <h1>Sheets</h1>
+    <p>A free spreadsheet that opens and saves Excel files. Formulas, charts, filters, Arabic right-to-left. No account, nothing uploaded.</p>
+  </section>
+
+  <div class="sh-app" id="app">
+    <div class="sh-menubar">
+      <nav class="sh-menus" aria-label="Menu">
+        <button class="sh-mbtn" id="mFile" type="button">File</button>
+        <button class="sh-mbtn" id="mEdit" type="button">Edit</button>
+        <button class="sh-mbtn" id="mInsert" type="button">Insert</button>
+        <button class="sh-mbtn" id="mFormat" type="button">Format</button>
+        <button class="sh-mbtn" id="mData" type="button">Data</button>
+        <button class="sh-mbtn" id="mView" type="button">View</button>
+        <button class="sh-mbtn" id="mHelp" type="button">Help</button>
+      </nav>
+      <label class="sh-name"><span class="sr">Workbook name</span><input class="input" id="docName" dir="auto" maxlength="120" value="Untitled spreadsheet" autocomplete="off"></label>
+      <span class="chip sh-save" id="saveState" role="status">Not saved yet</span>
+      <span class="grow"></span>
+      <label class="btn small sh-open" title="Open .xlsx, .csv or .tsv (Ctrl+O)"><svg class="i"><use href="#i-upload"/></svg><span class="sh-lbl">Open</span><input type="file" id="fileIn" accept=".xlsx,.csv,.tsv,.txt,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv" hidden></label>
+      <button class="btn primary small" id="btnSave" type="button" title="Download as .xlsx (Ctrl+S)"><svg class="i"><use href="#i-download"/></svg>.xlsx</button>
+    </div>
+
+    <div class="sh-toolbar" role="toolbar" aria-label="Formatting">
+      <div class="sh-grp">
+        <button class="sh-tb" id="btnUndo" type="button" title="Undo (Ctrl+Z)" aria-label="Undo"><svg class="i"><use href="#s-undo"/></svg></button>
+        <button class="sh-tb" id="btnRedo" type="button" title="Redo (Ctrl+Y)" aria-label="Redo"><svg class="i"><use href="#s-redo"/></svg></button>
+      </div>
+      <div class="sh-grp">
+        <label><span class="sr">Number format</span><select class="select sh-sel sh-fmt" id="tbFmt" title="Number format"></select></label>
+        <button class="sh-tb" id="tbCur" type="button" title="Currency (last used, JOD by default)" aria-label="Currency format"><svg class="i"><use href="#s-cur"/></svg></button>
+        <button class="sh-tb" id="tbPct" type="button" title="Percent" aria-label="Percent format"><svg class="i"><use href="#s-pct"/></svg></button>
+        <button class="sh-tb" id="tbDecDown" type="button" title="Fewer decimals" aria-label="Fewer decimals"><svg class="i"><use href="#s-decdown"/></svg></button>
+        <button class="sh-tb" id="tbDecUp" type="button" title="More decimals" aria-label="More decimals"><svg class="i"><use href="#s-decup"/></svg></button>
+      </div>
+      <div class="sh-grp">
+        <label><span class="sr">Font size</span><select class="select sh-sel sh-size" id="tbSize" title="Font size"></select></label>
+        <button class="sh-tb" id="tbBold" type="button" title="Bold (Ctrl+B)" aria-label="Bold" aria-pressed="false"><svg class="i"><use href="#s-bold"/></svg></button>
+        <button class="sh-tb" id="tbItalic" type="button" title="Italic (Ctrl+I)" aria-label="Italic" aria-pressed="false"><svg class="i"><use href="#s-italic"/></svg></button>
+        <button class="sh-tb" id="tbUnder" type="button" title="Underline (Ctrl+U)" aria-label="Underline" aria-pressed="false"><svg class="i"><use href="#s-under"/></svg></button>
+        <button class="sh-tb sh-swbtn" id="tbFc" type="button" title="Text colour" aria-label="Text colour"><svg class="i"><use href="#s-fc"/></svg></button>
+        <button class="sh-tb sh-swbtn" id="tbBg" type="button" title="Fill colour" aria-label="Fill colour"><svg class="i"><use href="#s-bg"/></svg></button>
+        <button class="sh-tb" id="tbBorders" type="button" title="Borders" aria-label="Borders"><svg class="i"><use href="#s-borders"/></svg></button>
+      </div>
+      <div class="sh-grp">
+        <button class="sh-tb" id="tbLeft" type="button" title="Align left" aria-label="Align left" aria-pressed="false"><svg class="i"><use href="#s-left"/></svg></button>
+        <button class="sh-tb" id="tbCenter" type="button" title="Align centre" aria-label="Align centre" aria-pressed="false"><svg class="i"><use href="#s-center"/></svg></button>
+        <button class="sh-tb" id="tbRight" type="button" title="Align right" aria-label="Align right" aria-pressed="false"><svg class="i"><use href="#s-right"/></svg></button>
+        <button class="sh-tb" id="tbValign" type="button" title="Vertical alignment" aria-label="Vertical alignment"><svg class="i"><use href="#s-valign"/></svg></button>
+        <button class="sh-tb" id="tbWrap" type="button" title="Wrap text" aria-label="Wrap text" aria-pressed="false"><svg class="i"><use href="#s-wrap"/></svg></button>
+        <button class="sh-tb" id="tbMerge" type="button" title="Merge or unmerge cells" aria-label="Merge cells" aria-pressed="false"><svg class="i"><use href="#s-merge"/></svg></button>
+      </div>
+      <div class="sh-grp">
+        <button class="sh-tb" id="tbSum" type="button" title="AutoSum (Alt+=)" aria-label="AutoSum"><svg class="i"><use href="#s-sum"/></svg></button>
+        <button class="sh-tb" id="tbSortA" type="button" title="Sort A → Z" aria-label="Sort ascending"><svg class="i"><use href="#s-sortA"/></svg></button>
+        <button class="sh-tb" id="tbSortZ" type="button" title="Sort Z → A" aria-label="Sort descending"><svg class="i"><use href="#s-sortZ"/></svg></button>
+        <button class="sh-tb" id="tbFilter" type="button" title="Filter" aria-label="Filter" aria-pressed="false"><svg class="i"><use href="#s-filter"/></svg></button>
+        <button class="sh-tb" id="tbCF" type="button" title="Conditional formatting" aria-label="Conditional formatting"><svg class="i"><use href="#s-cf"/></svg></button>
+        <button class="sh-tb" id="tbChart" type="button" title="Insert chart" aria-label="Insert chart"><svg class="i"><use href="#s-chart"/></svg></button>
+      </div>
+      <div class="sh-grp">
+        <button class="sh-tb" id="tbFreeze" type="button" title="Freeze rows and columns" aria-label="Freeze panes"><svg class="i"><use href="#s-freeze"/></svg></button>
+        <button class="sh-tb" id="tbRows" type="button" title="Insert or delete rows and columns" aria-label="Rows and columns"><svg class="i"><use href="#s-rows"/></svg></button>
+        <button class="sh-tb" id="tbFind" type="button" title="Find and replace (Ctrl+H)" aria-label="Find and replace"><svg class="i"><use href="#s-find"/></svg></button>
+        <button class="sh-tb" id="tbRtl" type="button" title="Right-to-left sheet (Arabic)" aria-label="Right-to-left sheet" aria-pressed="false"><svg class="i"><use href="#s-rtl"/></svg></button>
+      </div>
+    </div>
+
+    <div class="sh-fbar">
+      <label class="sh-nb"><span class="sr">Cell address</span><input class="input mono" id="namebox" value="A1" autocomplete="off" spellcheck="false" title="Type a cell or range and press Enter"></label>
+      <span class="sh-fxl" aria-hidden="true">fx</span>
+      <label class="sh-fxw"><span class="sr">Formula bar</span><textarea class="input mono" id="fx" rows="1" dir="auto" spellcheck="false" autocomplete="off" placeholder="Type a value or a formula such as =SUM(B2:B9)"></textarea></label>
+    </div>
+    <div class="sh-err" id="cellErr" role="note" hidden></div>
+
+    <div class="sh-gridwrap" id="gridwrap">
+      <div class="sh-empty" id="emptyCard">
+        <b>Start typing, or bring a spreadsheet</b>
+        <span class="faint">Drop an .xlsx or .csv here. It opens on this device only.</span>
+        <div class="row">
+          <button class="btn small" id="emptyOpen" type="button"><svg class="i"><use href="#i-upload"/></svg>Open a file</button>
+          <button class="btn small primary" id="emptySample" type="button">Try the sample budget</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sh-bottom">
+      <button class="sh-tb" id="btnAddSheet" type="button" title="Add a sheet" aria-label="Add a sheet"><svg class="i"><use href="#i-plus"/></svg></button>
+      <button class="sh-tb" id="btnSheets" type="button" title="All sheets" aria-label="All sheets"><svg class="i"><use href="#s-left"/></svg></button>
+      <div class="sh-tabs" id="tabs" role="tablist" aria-label="Sheets"></div>
+      <span class="sh-status" id="status" aria-live="polite"></span>
+    </div>
+  </div>
+  <p class="faint sh-foot">Your files never leave this device: the page is blocked from sending anything over the network. Workbooks autosave in this browser; download .xlsx to keep a copy.</p>
+</main>
+<div id="printArea" class="sh-printarea"></div>
+<script src="lib/exceljs.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/format.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/model.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/io.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/tests.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
